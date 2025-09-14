@@ -43,6 +43,9 @@ footer{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+footer>h1{
+    text-align: center;
+}
 
 header>h1{
     text-align: center;
@@ -59,7 +62,7 @@ footer:hover{
 }
 @media(max-width: 768px){
     main{
-        max-width: 700px;
+        max-width: 768px;
         margin: auto
     }
      .box{
@@ -74,18 +77,18 @@ footer:hover{
         margin: 10px auto;
         
     }
-    footer{
+     h1{
         text-align: center;
     }
 }
 
 @media(max-width: 480px){
       header{
-        max-width: 400px;
+        max-width: 480px;
         margin: 10px auto;
     }
     main{
-        max-width: 400px;
+        max-width: 480px;
         margin: auto
     }
     .box{
@@ -94,6 +97,17 @@ footer:hover{
     img{
         width: 260px;
     }
+    body{
+        width: 480px;
+    }
+    footer{
+        
+        width: 480px;
+    }
+    h1{
+        text-align: center;
+    }
 }
+
 
 
