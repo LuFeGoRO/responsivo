@@ -10,7 +10,7 @@ body{
 }
 .container{
     max-width: 1400px;
-    min-width: 100px;
+    min-width: 700px;
     background: rgb(79, 42, 165);
     border-radius: 12px;
     margin: 0 auto;
@@ -123,8 +123,9 @@ a:hover{
   }
 }
 @media (max-width: 480px) {
+  
   .box {
-    width: 200px; 
+    width: 475px; 
   }
 }
 
