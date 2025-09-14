@@ -6,7 +6,7 @@
 }
 body{
     color : white;
-     background-image: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
+     background-image: linear-gradient(90deg, #0f3d81, #062458, #020c11);
     background-attachment: fixed;
     }
 
@@ -60,7 +60,6 @@ header:hover{
 footer:hover{
     box-shadow: 2px -2px 5px 5px #0d66db;
 }
-
 @media(max-width: 768px){
     main{
         max-width: 768px;
@@ -70,7 +69,7 @@ footer:hover{
     width: 370px;
     
     }
-    img{
+    video{
         width: 330px;
     }
      header{
@@ -100,7 +99,7 @@ footer:hover{
     .box{
     width: 300px;
     }
-    img{
+    video{
         width: 260px;
     }
     body{
@@ -112,6 +111,3 @@ footer:hover{
     }
     
 }
-
-
-
