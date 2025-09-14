@@ -71,6 +71,7 @@ a:hover{
         width: 480px;
     }
      .box{
+        padding: auto;
     width: 240px;
     
     }
