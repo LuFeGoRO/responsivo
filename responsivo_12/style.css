@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+body{
+    color : white;
+    background-color: rgb(19, 41, 114);
+    
+}
+header{
+    width: 1000px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
+}
+.box{
+    padding: 18em;
+}
+header>h1{
+    text-align: center;
+}
+header>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+header>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+footer{
+    width: 1000px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
+}
+footer>h1{
+    text-align: center;
+}
+footer>h1>a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+footer>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+footer>h1>a:hover{ color:rgb(5, 47, 82);}
+
+@media(max-width: 88em){
+    body{
+    background-image: url(galeria/planeta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top,
+            rgba(102, 39, 228, 0) 0%,
+            rgba(255, 17, 17, 0.181) 100%),
+        url(img/luna.jpg);
+
+    }
+    header{
+        max-width: 82em;
+        width: 63rem;
+        
+    }
+ 
+     
+
+
+    
+    
+}
+@media(max-width: 44em){
+    body{
+    background-image: url(galeria/planeta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top,
+            rgba(230, 27, 20, 0.116) 0%,
+            rgba(255, 17, 17, 0.181) 100%),
+        url(img/nebulosa.jpg);
+
+    }
+    header{
+        max-width: 44em;
+        width: 38em;
+    }
+     
+      
+    footer{
+         max-width: 44em;
+        width: 38em;
+    }
+    
+}
+
+@media(max-width: 30rem){
+    body{
+    background-image: url(galeria/planeta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top,
+            rgba(4, 3, 46, 0.068) 0%,
+            rgba(22, 21, 21, 0.181) 100%),
+        url(img/via\ lactea.jpg);
+
+    }
+        header{
+        max-width: 30rem;
+        width: 18rem;
+    }
+     
+
+
+footer{
+    max-width: 30rem;
+        width: 25rem;
+}
+}
