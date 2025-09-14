@@ -38,9 +38,26 @@ h3:hover{
 a:hover{
     color: antiquewhite;
 }
-@media(max-width: 768px){
+@media(max-width: 1400px){
+    .container{
+        max-width: 1300px;
+        width: 1300px;
+    }
      .box{
-    width: 370px;
+    width: 648px;
+    
+    }
+    
+    
+    
+}
+@media(max-width: 700px){
+    .container{
+        max-width: 600px;
+        width: 600px;
+    }
+     .box{
+    width: 300px;
     
     }
     
@@ -49,22 +66,13 @@ a:hover{
 }
 
 @media(max-width: 480px){
-      header{
-        max-width: 300px;
-        margin: 10px auto;
+        .container{
+        max-width: 600px;
+        width: 600px;
     }
-    main{
-        max-width: 480px;
-        margin: auto
-    }
-    .box{
+     .box{
     width: 300px;
-    }
-    video{
-        width: 260px;
-    }
-    body{
-        width: 480px;
+    
     }
     
     
