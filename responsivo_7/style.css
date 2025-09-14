@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(galeria/planeta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top,
+            rgba(102, 39, 228, 0.51) 0%,
+            rgba(255, 17, 17, 0.181) 100%),
+        url(galeria/sol.jpg);
+}
+
+.contendor {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #4e4d4d75;
+}
+
+main.contendor>h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+main.contendor div {
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+}
+
+main.contendor div img {
+    
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    margin: 30px;
+    filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));
+}
+
+div h1 {
+    margin: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 21px;
+    color: #4e4d4d;
+    text-shadow: 0px 1px 2px rgba(39, 39, 39, 0.5);
+}
+footer{
+    width: 698px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
+}
+footer>h1{
+    text-align: center;
+}
+footer>h1>a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+footer>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+@media(max-width: 1400px){
+    body{
+        text-align: center;
+    }
+    .contendor{
+        max-width: 1300px;
+        width: 1000px;
+        
+    }
+    
+}
+@media(max-width: 700px){
+    body{
+        text-align: center;
+    }
+    .contendor{
+        max-width: 700px;
+        width: 600px;
+    }
+    footer{
+         max-width: 700px;
+        width: 600px;
+    }
+
+}
+
+@media(max-width: 480px){
+     body{
+        text-align: center;
+    }
+        .contendor{
+        max-width: 480px;
+        width: 400px;
+    }  
+footer{
+    max-width: 480px;
+        width: 400px;
+}
+}

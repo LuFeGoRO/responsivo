@@ -6,12 +6,12 @@
 }
 body{
     color : white;
-    background-color: rgb(19, 41, 114);
+    background-color: rgb(6, 12, 39);
 }
 .container{
     max-width: 1400px;
     min-width: 700px;
-    background: rgb(79, 42, 165);
+    background: rgb(2, 11, 61);
     border-radius: 12px;
     margin: 0 auto;
     
@@ -19,7 +19,7 @@ body{
 .box{
     display: inline-block;
     width: 698px;
-    background-color: rgb(5, 47, 82);
+    background-color: rgb(9, 67, 116);
     padding: 5px;
     margin-bottom: 10px;
     border-radius:10px ;
