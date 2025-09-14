@@ -180,7 +180,7 @@ footer{
 @media print{
     body{
         background-color: white;
-        color black;
+        color :black;
         font-size: 14px;
     }
 
