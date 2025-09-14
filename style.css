@@ -67,17 +67,16 @@ a:hover{
 
 @media(max-width: 480px){
         .container{
-        max-width: 600px;
-        width: 600px;
+        max-width: 480px;
+        width: 488px;
     }
      .box{
-    width: 300px;
+    width: 240px;
     
     }
     
     
 }
-
 
 
 

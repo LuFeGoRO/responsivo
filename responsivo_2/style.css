@@ -24,39 +24,66 @@ body{
     margin-bottom: 10px;
     border-radius:15px ; 
 }
+footer{
+    width: 698px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
+}
+footer>h1{
+    text-align: center;
+}
+footer>h1>a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+footer>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+@media(max-width: 1400px){
+    .container{
+        max-width: 1300px;
+        width: 1300px;
+    }
+     .box{
+    width: 648px;
+    
+    }
+    
+    
+    
+}
+@media(max-width: 700px){
+    .container{
+        max-width: 600px;
+        width: 600px;
+    }
+     .box{
+    width: 300px;
+    
+    }
+    
+    
+    
+}
 
-@media (max-width: 1400px) {
-.box{
-    width: 673px;
+@media(max-width: 480px){
+        .container{
+        max-width: 480px;
+        width: 488px;
+    }
+     .box{
+    width: 240px;
+    
+    }
+    
     
 }
-}
-
-@media (max-width: 768px) {
-.box{
-    width: 380px;
-    
-}
-}
-@media (max-width: 992px) {
-.box{
-    width: 480px;
-    
-}
-}
-@media (max-width: 1200px) {
-.box{
-    width: 590px;
-    
-}
-}
-@media (max-width: 375px) {
-.box{
-    width: 185px;
-    
-}
-}
-
 
 
 

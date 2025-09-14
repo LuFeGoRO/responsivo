@@ -25,6 +25,28 @@ body{
     border-radius:15px ;
     
 }
+footer{
+    width: 300px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
+}
+footer>h1{
+    text-align: center;
+}
+footer>h1>a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+footer>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
+}
+footer>h1>a:hover{ color:rgb(5, 47, 82);}
 @media (max-width: 1400px) {
 .box{
     width: 680px;
