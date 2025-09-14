@@ -57,36 +57,43 @@ header:hover{
 footer:hover{
     box-shadow: 2px -2px 5px 5px #0d66db;
 }
-@media(min-width: 768px){
+@media(max-width: 768px){
     main{
         max-width: 700px;
         margin: auto
     }
      .box{
-    width: 200px;
+    width: 370px;
+    
     }
     img{
-        width: 150px;
+        width: 330px;
     }
      header{
-        max-width: 768px;
+        max-width: 370px;
         margin: 10px auto;
+        
+    }
+    footer{
+        text-align: center;
     }
 }
-@media(min-width: 1200px){
-    header{
-        max-width: 1024px;
+
+@media(max-width: 480px){
+      header{
+        max-width: 400px;
         margin: 10px auto;
     }
     main{
-        max-width: 1024px;
+        max-width: 400px;
         margin: auto
     }
     .box{
-    width: 600px;
+    width: 300px;
     }
     img{
-        width: 550px;
+        width: 260px;
     }
 }
+
 
