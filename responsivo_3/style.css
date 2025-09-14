@@ -80,11 +80,18 @@ footer:hover{
      h1{
         text-align: center;
     }
+      footer{
+        
+        width:370px;
+    }
+    h1{
+        text-align: center;
+    }
 }
 
 @media(max-width: 480px){
       header{
-        max-width: 480px;
+        max-width: 300px;
         margin: 10px auto;
     }
     main{
@@ -102,7 +109,7 @@ footer:hover{
     }
     footer{
         
-        width: 480px;
+        width: 300px;
     }
     h1{
         text-align: center;
