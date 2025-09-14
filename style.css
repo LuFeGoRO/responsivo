@@ -38,97 +38,37 @@ h3:hover{
 a:hover{
     color: antiquewhite;
 }
-@media (max-width: 1400px) {
-.box{
-    width: 680px;
+@media(max-width: 768px){
+     .box{
+    width: 370px;
+    
+    }
+    
+    
     
 }
-}
-@media (max-width: 1200px) {
-.box{
-    width: 590px;
+
+@media(max-width: 480px){
+      header{
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    main{
+        max-width: 480px;
+        margin: auto
+    }
+    .box{
+    width: 300px;
+    }
+    video{
+        width: 260px;
+    }
+    body{
+        width: 480px;
+    }
+    
     
 }
-}
-@media (max-width: 1150px) {
-.box{
-    width: 550px;
-    
-}
-}
-
-@media (max-width: 600px) {
-.box{
-    width: 290px;
-    
-}
-}
-@media (max-width: 1400px) {
-  .box {
-    width: 680px; 
-  }
-}
-
-@media (max-width: 1350px) {
-  .box {
-    width: 650px; 
-  }
-}
-
-@media (max-width: 1300px) {
-  .box {
-    width: 630px; 
-  }
-}
-
-@media (max-width: 1250px) {
-  .box {
-    width: 605px; 
-  }
-}
-
-@media (max-width: 1060px) {
-  .box {
-    width: 500px;
-  }
-}
-@media (max-width: 1064px) {
-  .box {
-    width: 500px;
-  }
-}
-
-
-@media (max-width: 1150px) {
-  .box {
-    width: 555px; 
-  }
-}
-
-@media (max-width: 1100px) {
-  .box {
-    width: 530px; 
-  }
-}
-
-@media (max-width: 1050px) {
-  .box {
-    width: 500px; 
-  }
-}
-
-@media (max-width: 1000px) {
-  .box {
-    width: 480px; 
-  }
-}
-@media (max-width: 480px) {
-  
-  .box {
-    width: 475px; 
-  }
-}
-
 
 
 

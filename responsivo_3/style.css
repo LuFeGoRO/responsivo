@@ -60,8 +60,23 @@ header:hover{
 footer:hover{
     box-shadow: 2px -2px 5px 5px #0d66db;
 }
-
-@media(max-width: 768px){
+footer>h1{
+    text-align: center;
+}
+footer>h1>a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+footer>h1:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+}
+footer>h1>a:hover{
+    
+    color: rgb(5, 47, 82);
+}
+@media(min-width: 768px){
     main{
         max-width: 768px;
         margin: auto
@@ -88,7 +103,7 @@ footer:hover{
     
 }
 
-@media(max-width: 480px){
+@media(min-width: 480px){
       header{
         max-width: 300px;
         margin: 10px auto;
