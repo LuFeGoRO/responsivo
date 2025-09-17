@@ -1,14 +1,23 @@
 *{
+    /*reseteo la pagina, quito margenes y 
+    espacios internos*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
 body{
+    /*las letras del fondo seran blancas
+    y el fondo del color presente, solo 
+    aplica al borde*/
     color : white;
     background-color: rgb(6, 13, 39);
 }
 .container{
+    /*la pantalla tendra las dimenciones
+    presentes en el codigo, un fondo solo al 
+    contenedor, un centrado
+     y redondeo los bordes*/
     max-width: 1400px;
     min-width: 700px;
     background: rgb(2, 11, 61);
@@ -17,6 +26,11 @@ body{
     
 }
 .box{
+    /*la caja tendar una disposision en
+    linea de bloque, cada caja tiene un tamaño
+    presente en codigo, relleno interno,
+    establece un margen general y se redondean
+    los bordes*/
     display: inline-block;
     width: 698px;
     background-color: rgb(9, 67, 116);
@@ -28,16 +42,38 @@ body{
     
 }
 h3>a{
+    /*color de letra, y quitar el subrayado 
+    del elemento a*/
     text-decoration: none;
     color:rgb(124, 156, 148);
 
 }
 h3:hover{
+    /*todo elemento h3 se va hacer mas grande
+    al pasar el cursor sobre el, en pantallas
+    tactiles cuando se toque*/
     padding: 20px;
 }
 a:hover{
+    /*todo elemento a se va a cambiar de color
+    al pasar el cursor sobre el, en pantallas
+    tactiles cuando se toque*/
     color: antiquewhite;
+}/* adaptacion a pantallas pantallas  mas grandes*/
+@media(max-width: 1600px){
+    .container{
+        max-width: 1600px;
+        width: 1500px;
+    }
+     .box{
+    width: 745px;
+    
+    }
+    
+    
+    
 }
+/* adaptacion a pantallas pantallas grandes*/
 @media(max-width: 1400px){
     .container{
         max-width: 1300px;
@@ -50,7 +86,7 @@ a:hover{
     
     
     
-}
+}/* adaptacion a pantallas pantallas medianas*/
 @media(max-width: 700px){
     .container{
         max-width: 700px;
@@ -63,7 +99,7 @@ a:hover{
     
     
     
-}
+}/* adaptacion a pantallas pantallas mobiles*/
 
 @media(max-width: 480px){
         .container{
