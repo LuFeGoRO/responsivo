@@ -1,0 +1,21 @@
+comentarios css
+/*reseteo la pagina*/
+/*colores de letra y fondo*/
+/*tamaño maximo, minimo, decoracion de fondo, borde redondo y centrado*/
+/*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
+   color de letras blancas, fondo rgb azul oscuro */
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
+/*centro todo elemto hero 1(titulo) que este dentro 
+    del pie de pagina*/
+/*quito subrayado del elemto (a), margen general, lera color
+    "blanca"*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia*/
+######################################################################################
+comentarios html
+<!-- pie de pagina con enlace de retorno-->
+<!-- contenedor con cajas-->

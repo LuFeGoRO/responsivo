@@ -1,14 +1,17 @@
 *{
+    /*reseteo la pagina*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
 body{
+    /*colores de letra y fondo*/
     color : white;
     background-color: rgb(19, 41, 114);
 }
 .container{
+    /*tamaño maximo, minimo, decoracion de fondo, borde redondo y centrado*/
     max-width: 1400px;
     min-width: 700px;
     background: rgb(79, 42, 165);
@@ -17,6 +20,8 @@ body{
     
 }
 .box{
+    /*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
     display: inline-block;
     width: 600px;
     background-color: rgb(5, 47, 82);
@@ -26,6 +31,8 @@ body{
     
 }
 footer{
+    /*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
     width: 300px;
     margin: 10px auto;
      color : white;
@@ -34,19 +41,30 @@ footer{
     border-radius: 12px;
 }
 footer>h1{
+    /*centro todo elemto hero 1(titulo) que este dentro 
+    del pie de pagina*/
     text-align: center;
 }
 footer>h1>a{
+    /*quito subrayado del elemto (a), margen general, lera color
+    "blanca"*/
     text-decoration: none;
     margin-bottom: 10px;
     color: aliceblue;
 }
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
 footer>h1:hover{
+    border-radius: 12px;
     background-color: aliceblue;
     color: rgb(5, 47, 82);
     cursor: pointer;
 }
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia*/
 footer>h1>a:hover{ color:rgb(5, 47, 82);}
+/*en estas medias hago cambiar los colores del
+fondo cajas y mucho mas*/
 @media (max-width: 1400px) {
 .box{
     width: 680px;
