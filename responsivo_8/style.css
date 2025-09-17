@@ -1,24 +1,28 @@
+/*reseteo la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
+/*colores de letra, centrado y fondo*/
 body{
     color : white;
      background-image: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
     background-attachment: fixed;
     }
-
+/*  dispoicion en bloque y centrado*/
 main{
     display:inline-block;
     text-align: center;
 }
-img{
+img{/*tamaño de las imagenes y que ese ajusten*/
      width: 700px;
     height: 700px;
     object-fit: contain;
 }
+/*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
 .box{
     display: inline-block;
     width: 800px;
@@ -32,6 +36,8 @@ img{
     
     
 }
+/*tamaño de dimencion del encabezado, margenes y centrado, color de fondo, sobreado y
+bordr redondo*/
 header{
     width:300px;
     margin: 10px auto;
@@ -40,6 +46,25 @@ header{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia de color*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
+/*adaptacion a pantalla grandes, cambios den
+las medidas del contenedor y cajas*/
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
+/*adaptacion a pantalla mobiles, cambios den
+las medidas del contenedor y cajas*/
 footer{
     width: 300px;
     margin: 10px auto;

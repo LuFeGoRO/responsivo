@@ -1,9 +1,11 @@
+/*reseteo la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
+/*colores de letra y fondo*/
 body{
     color : white;
      background-image: linear-gradient(90deg, #0c1b32, #122e60, #1678a7);
@@ -11,26 +13,13 @@ body{
     }
 
 main{
+    /*tamaños de dimencion de la pagina y centrado*/
+    margin: 0 auto;
     display:inline-block;
     text-align: center;
 }
-img{
-     width: 270px;
-    height: 270px;
-    object-fit: contain;
-}
-.box{
-    display: inline-block;
-    width: 300px;
-    background-color: rgb(5, 47, 82);
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius:15px ;
-    box-shadow: 02px 1px 2px 1px #0d66db;
-   
-    
-    
-}
+/*tamañso de dimencion del encabezado, margenes y centrado, color de fondo, sobreado y
+bordr redondo*/
 header{
     width:300px;
     margin: 10px auto;
@@ -39,6 +28,48 @@ header{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+
+header>h1{
+    text-align: center;
+}
+/*cuando el cursor o el dedo toque o sobre pase el encabezado de pagina 
+se hace blanco y sus letras azules*/
+header:hover{
+     box-shadow: 2px -2px 5px 5px #0d66db;
+}
+
+/*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
+.box{
+    display: inline-block;
+    width: 300px;
+    background-color: rgb(5, 47, 82);
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius:15px ;
+    box-shadow: 02px 1px 2px 1px #0d66db;
+   
+    
+    
+}
+/*las cajas activan una difuminacion en sus bordes
+*/
+.box:hover{
+    box-shadow: 5px 5px 5px 5px #0d66db;
+}
+/*tamaño de las imagenes y que ese ajusten*/
+img{
+     width: 270px;
+    height: 270px;
+    object-fit: contain;
+}
+h2{ /*centro los titulos hero 2*/
+    text-align: center;
+}
+
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
 footer{
     width: 300px;
     margin: 10px auto;
@@ -47,44 +78,80 @@ footer{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
 footer>h1{
     text-align: center;
 }
 
-header>h1{
-    text-align: center;
-}
-h2{ text-align: center;}
-.box:hover{
-    box-shadow: 5px 5px 5px 5px #0d66db;
-}
-header:hover{
-     box-shadow: 2px -2px 5px 5px #0d66db;
-}
+
+
+
+
 footer:hover{
     box-shadow: 2px -2px 5px 5px #0d66db;
 }
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
 footer>h1{
     text-align: center;
 }
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
 footer>h1>a{
     text-decoration: none;
     margin-bottom: 10px;
     color: aliceblue;
 }
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
 footer>h1:hover{
     background-color: aliceblue;
     color: rgb(5, 47, 82);
 }
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia de color*/
 footer>h1>a:hover{
     
     color: rgb(5, 47, 82);
 }
+/*adaptacion a pantalla grandes, cambios den
+las medidas del contenedor y cajas*/
+@media(min-width: 1280px){
+    main{
+        max-width: 1250px;
+        margin:  auto;
+        display: inline-block;
+        
+    }
+     .box{
+    width: 620px;
+    
+    }
+    img{
+        width: 500px;
+    }
+     header{
+        
+        margin: 10px auto;
+        
+    }
+     h1{
+        text-align: center;
+    }
+      footer{
+        
+        width:1090px;
+    }
+    
+}/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(min-width: 1100px){
     main{
         max-width: 1090px;
-        margin: auto;
+        margin:  auto;
         display: inline-block;
+        
     }
      .box{
     width: 550px;
@@ -107,11 +174,12 @@ footer>h1>a:hover{
     }
     
 }
-
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(min-width: 768px){
     main{
-        max-width: 768px;
-        margin: auto
+        margin: auto;
+        display: inline-block;
     }
      .box{
     width: 370px;
@@ -135,30 +203,7 @@ footer>h1>a:hover{
     
 }
 
-@media(m-width: 480px){
-      header{
-        max-width: 300px;
-        margin: 10px auto;
-    }
-    main{
-        max-width: 480px;
-        margin: auto
-    }
-    .box{
-    width: 300px;
-    }
-    img{
-        width: 260px;
-    }
-    body{
-        width: 480px;
-    }
-    footer{
-        
-        width: 300px;
-    }
-    
-}
+
 
 
 

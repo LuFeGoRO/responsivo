@@ -1,9 +1,10 @@
+/*reseteo la pagina*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*colores de fondo y agregado de imagen*/
 body {
     background-image: url(galeria/planeta.png);
     background-repeat: no-repeat;
@@ -14,7 +15,9 @@ body {
             rgba(255, 17, 17, 0.181) 100%),
         url(galeria/sol.jpg);
 }
-
+/*tamaños de dimencion de la pagina,
+color de fondo y centrado al contenedor y 
+a sus elementos*/
 .contendor {
     text-align: center;
     width: 90%;
@@ -58,6 +61,18 @@ div h1 {
     color: #4e4d4d;
     text-shadow: 0px 1px 2px rgba(39, 39, 39, 0.5);
 }
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia de color*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
 footer{
     width: 698px;
     margin: 10px auto;
@@ -78,7 +93,8 @@ footer>h1:hover{
     background-color: aliceblue;
     color: rgb(5, 47, 82);
     cursor: pointer;
-}
+}/*adaptacion a pantallas medianas y grandes, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 1400px){
     body{
         text-align: center;
@@ -89,7 +105,8 @@ footer>h1:hover{
         
     }
     
-}
+}/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 700px){
     body{
         text-align: center;
@@ -104,7 +121,8 @@ footer>h1:hover{
     }
 
 }
-
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 480px){
      body{
         text-align: center;

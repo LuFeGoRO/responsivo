@@ -1,25 +1,32 @@
+/*reseteo la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
+/*colores de letra, fondo y centrados*/
 body{
     color : white;
     background-color: rgb(2, 95, 102);
     justify-content: center;
     text-align: center;
 }
+/*tamaños de dimencion de la pagina y centrado
+fondo del contenedor, ancho y borde redondo*/
 .container{
     margin: 0 auto;
     background-color: rgb(19, 172, 172);
     width: 300px;
     border-radius: 10px;
 }
+
 .container>h1{
     text-align: center;
 }
-
+/*caja con disposicion en bloque, 
+medidas, fondo, relleno, espaciado 
+general y un borde redondo */
 .box{
     margin: 5px auto;
     display: inline-block;
@@ -30,6 +37,7 @@ body{
     
     
 }
+/*listas sin decoraciones */
 nav>ol{
     list-style: none;
     display: flex;
@@ -37,17 +45,22 @@ nav>ol{
 
     
 }
+/*a dentros del h3 sin subrayado y del color
+que esta ahi*/
 h3>a{
     text-decoration: none;
     color:rgb(124, 156, 148);
 
 }
+/*h3 se hace mas grande*/
 h3:hover{
     padding: 20px;
 }
+/*a de hace balnco*/
 a:hover{
     color: antiquewhite;
 }
+/*ponse un efecto sobre la lista*/
 nav>ol>li:hover{
      background-color: white;
     color: rgb(2, 4, 88);
@@ -56,7 +69,8 @@ nav>ol>li:hover{
     
 }
 nav li::after {
-    /*pone una linea despues de cada elemento de la lista*/
+    /* y cambia su disposicion en bloque 
+    pone una linea despues de cada elemento de la lista*/
     content: "";
     display: block;
     width: 100%;
@@ -64,7 +78,18 @@ nav li::after {
     background: rgba(255, 255, 255, 0.4);
     margin-top: 4px;
 }
-
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia de color*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
 footer{
     width: 698px;
     margin: 10px auto;
@@ -86,6 +111,8 @@ footer>h1:hover{
     color: rgb(5, 47, 82);
     cursor: pointer;
 }
+/*adaptacion a pantallas medianas y grandes, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 1400px){
     body{
         text-align: center;
@@ -121,6 +148,8 @@ footer>h1:hover{
     
     
 }
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 700px){
     body{
         text-align: center;
@@ -143,7 +172,8 @@ footer>h1:hover{
     }
     
 }
-
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 480px){
      body{
         text-align: center;

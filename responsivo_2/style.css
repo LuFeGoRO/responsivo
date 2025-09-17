@@ -1,13 +1,16 @@
+/*reseteo la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
+/*colores de letra y fondo*/
 body{
     color : white;
     background-color: rgb(19, 41, 114);
 }
+/*tamaño maximo, minimo, decoracion de fondo, borde redondo y centrado*/
 .container{
     max-width: 1400px;
     min-width: 700px;
@@ -16,6 +19,8 @@ body{
     margin: 0 auto;
     
 }
+/*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
 .box{
     display: inline-block;
     width: 698px;
@@ -24,6 +29,8 @@ body{
     margin-bottom: 10px;
     border-radius:15px ; 
 }
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
 footer{
     width: 698px;
     margin: 10px auto;
@@ -32,19 +39,34 @@ footer{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
 footer>h1{
     text-align: center;
 }
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
 footer>h1>a{
     text-decoration: none;
     margin-bottom: 10px;
     color: aliceblue;
 }
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+footer:hover{
+    background-color: aliceblue;
+    
+    cursor: pointer;
+}
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia*/
 footer>h1:hover{
     background-color: aliceblue;
     color: rgb(5, 47, 82);
     cursor: pointer;
 }
+/*adaptacion a pantalla grandes, cambios den
+las medidas del contenedor y cajas*/
 @media(max-width: 1400px){
     .container{
         max-width: 1300px;
@@ -58,6 +80,8 @@ footer>h1:hover{
     
     
 }
+/*adaptacion a pantalla mobiles, cambios den
+las medidas del contenedor y cajas*/
 @media(max-width: 700px){
     .container{
         max-width: 600px;
@@ -71,6 +95,8 @@ footer>h1:hover{
     
     
 }
+/*adaptacion a pantalla mobiles, cambios den
+las medidas del contenedor y cajas*/
 
 @media(max-width: 480px){
         .container{

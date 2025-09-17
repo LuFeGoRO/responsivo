@@ -64,7 +64,7 @@ footer>h1:hover{
 o el dedo toque el boton la letra cambia*/
 footer>h1>a:hover{ color:rgb(5, 47, 82);}
 /*en estas medias hago cambiar los colores del
-fondo cajas y mucho mas*/
+fondo cajas y demas elentos mas*/
 @media (max-width: 1400px) {
 .box{
     width: 680px;

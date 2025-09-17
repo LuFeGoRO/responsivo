@@ -1,21 +1,118 @@
 comentarios css
+*{}=
 /*reseteo la pagina*/
-/*colores de letra y fondo*/
-/*tamaño maximo, minimo, decoracion de fondo, borde redondo y centrado*/
+body{}=
+/*colores de letra, centrado y fondo*/
+main{}=
+/*tamaños de dimencion de la pagina y centrado*/
+header{}=
+/*tamaño de dimencion del encabezado, margenes y centrado, color de fondo, sobreado y
+bordr redondo*/
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del encabezado*/
+/*cuando el cursor o el dedo 
+toque se activa la difuminacion*/
+/*cuando el cursor o el dedo toque o sobre pase el encabezado de pagina 
+se hace blanco y sus letras azules*/
+
+.box{}=
 /*caja con disposicion en bloque, medidas, fondo,
      relleno, espaciado general y un borde redondo */
-   color de letras blancas, fondo rgb azul oscuro */
+/*cuando el cursor o el dedo 
+toque las cajas activan una difuminacion en sus bordes
+*/
+
+img{}=
+/*tamaño de las imagenes y que ese ajusten*/
+   /*color de letras blancas, fondo rgb azul oscuro */
+h2={}
+/*centro los titulos hero 2*/
+footer{}=
 /*pie de pagina con medidas, centrado y alineado, 
    color de letras blancas, fondo rgb azul oscuro */
-/*centro todo elemto hero 1(titulo) que este dentro 
+/*centro todo elemento hero 1(titulo) que este dentro 
     del pie de pagina*/
-/*quito subrayado del elemto (a), margen general, lera color
+/*quito subrayado del elemento (a), margen general, lera color
     "blanca"*/
 /*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
 se hace blanco*/
 /*cuando el cursor pase por ensima 
-o el dedo toque el boton la letra cambia*/
+o el dedo toque el boton la letra cambia de color*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
+@medias{}
+/*adaptacion a pantalla grandes, cambios den
+las medidas del contenedor y cajas*/
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
+/*adaptacion a pantalla mobiles, cambios den
+las medidas del contenedor y cajas*/
+
 ######################################################################################
 comentarios html
-<!-- pie de pagina con enlace de retorno-->
+<!-- prinsipal-->
+<!-- encabezado-->
 <!-- contenedor con cajas-->
+<!-- contenedor con titulo y enalce-->
+<!-- contenedor con lista-->
+<!--cajas con imagenes jpg y un titulo-->
+<!-- pie de pagina con enlace de retorno-->
+######################################################################
+/*adaptacion a pantallas medianas y grandes, cambios den
+las medianas del contenedor y cajas*/
+@media(max-width: 1100px){
+    main{
+        max-width: 1090px;
+        margin:  auto;
+        display: inline-block;
+        
+    }
+     .box{
+    width: 550px;
+    
+    }
+    img{
+        width: 500px;
+    }
+     header{
+        max-width: 1090px;
+        margin: 10px auto;
+        
+    }
+     h1{
+        text-align: center;
+    }
+      footer{
+        
+        width:1090px;
+    }
+    
+}
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
+@media(max-width: 768px){
+    main{
+        margin: auto;
+        display: inline-block;
+    }
+     .box{
+    width: 370px;
+    
+    }
+    img{
+        width: 330px;
+    }
+     header{
+        max-width: 370px;
+        margin: 10px auto;
+        
+    }
+     h1{
+        text-align: center;
+    }
+      footer{
+        
+        width:370px;
+    }
+    
+}

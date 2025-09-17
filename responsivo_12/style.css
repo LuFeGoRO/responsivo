@@ -1,24 +1,22 @@
-*{
+*{/*reseteo la pagina*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
-body{
+body{/*colores de letra y fondo*/
     color : white;
     background-color: rgb(19, 41, 114);
     
 }
-header{
+header{/*tamaño de dimencion del encabezado, margenes y centrado, color de fondo, sobreado y
+bordr redondo*/
     width: 1000px;
     margin: 10px auto;
      color : white;
     background-color:  rgb(5, 47, 82);
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
-}
-.box{
-    padding: 18em;
 }
 header>h1{
     text-align: center;
@@ -33,6 +31,22 @@ header>h1:hover{
     color: rgb(5, 47, 82);
     cursor: pointer;
 }
+/*caja vacia*/
+.box{
+    padding: 18em;
+}
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco*/
+/*cuando el cursor pase por ensima 
+o el dedo toque el boton la letra cambia de color*/
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
 footer{
     width: 1000px;
     margin: 10px auto;
@@ -55,7 +69,8 @@ footer>h1:hover{
     cursor: pointer;
 }
 footer>h1>a:hover{ color:rgb(5, 47, 82);}
-
+/*adaptacion a pantallas medianas y grandes, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 88em){
     body{
     background-image: url(galeria/planeta.png);
@@ -79,7 +94,8 @@ footer>h1>a:hover{ color:rgb(5, 47, 82);}
 
     
     
-}
+}/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 44em){
     body{
     background-image: url(galeria/planeta.png);
@@ -104,7 +120,8 @@ footer>h1>a:hover{ color:rgb(5, 47, 82);}
     }
     
 }
-
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 30rem){
     body{
     background-image: url(galeria/planeta.png);

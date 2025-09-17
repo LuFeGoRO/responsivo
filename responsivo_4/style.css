@@ -1,27 +1,51 @@
+/*reseteo la pagina*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-style: italic;
 }
+/*colores de letra y fondo y fondo fijo*/
 body{
     color : white;
      background-image: linear-gradient(90deg, #0f3d81, #062458, #020c11);
     background-attachment: fixed;
     }
-#n1{display: none;}
-#n2{display: none;}
-#n3{display: none;}
-
+/*tamaños de dimencion de la pagina y centrado*/
 main{
     display:inline-block;
     text-align: center;
 }
-img{
-    width: 270px;
-    height: 270px;
-    object-fit: contain;
+
+
+/*tamaño de dimencion del encabezado, margenes y centrado, color de fondo, sobreado y
+bordr redondo*/
+header{
+    width: 698px;
+    margin: 10px auto;
+     color : white;
+    background-color:  rgb(5, 47, 82);
+    box-shadow: 02px 1px 2px 1px #0d66db;
+    border-radius: 12px;
 }
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del encabezado*/
+header>h1{
+    text-align: center;
+}
+
+/*cuando el cursor o el dedo 
+toque se activa la difuminacion*/
+
+header:hover{
+     box-shadow: 2px -2px 5px 5px #0d66db;
+}
+    /*desaparesco el contenido*/
+#n1{display: none;}
+#n2{display: none;}
+#n3{display: none;}
+/*caja con disposicion en bloque, medidas, fondo,
+     relleno, espaciado general y un borde redondo */
 .box{
     display: inline-block;
     width: 300px;
@@ -31,18 +55,53 @@ img{
     margin: 10px;
     border-radius:15px ;
     box-shadow: 02px 1px 2px 1px #0d66db;
-   
-    
-    
+}/*cuando el cursor o el dedo 
+toque las cajas activan una difuminacion en sus bordes
+*/
+.box:hover{
+    box-shadow: 5px 5px 5px 5px #0d66db;
 }
-header{
-    width: 698px;
-    margin: 10px auto;
-     color : white;
-    background-color:  rgb(5, 47, 82);
-    box-shadow: 02px 1px 2px 1px #0d66db;
-    border-radius: 12px;
+/*tamaño de las imagenes y que ese ajusten*/
+   /*color de letras blancas, fondo rgb azul oscuro */
+img{
+    width: 270px;
+    height: 270px;
+    object-fit: contain;
 }
+/*centro los titulos hero 2*/
+h2{ text-align: center;}
+/*simulo un boton con color negro y letras balcas con
+bordes redondos*/
+.plegable{
+    width: 200px;
+    background-color: #020c11;
+     border-radius: 12px;
+     margin: 10px;
+}
+/*aparece galeria 1*/
+#n1:target{
+    display: contents;
+}
+/*aparece galeria 2*/
+#n2:target{
+    display: contents;
+}
+/*aparece galeria 3*/
+#n3:target{
+    display: contents;
+}/*quito subrayado de a y color letra blanca*/
+.plegable>h2>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/*cuando el cursor o el dedo 
+toque  se activa una difuminacion en sus borde*/
+.plegable:hover{
+    box-shadow: 2px -2px 5px 5px #0d66db;
+}
+
+/*pie de pagina con medidas, centrado y alineado, 
+   color de letras blancas, fondo rgb azul oscuro */
 footer{
     width: 698px;
     margin: 10px auto;
@@ -51,61 +110,71 @@ footer{
     box-shadow: 02px 1px 2px 1px #0d66db;
     border-radius: 12px;
 }
+/*centro todo elemento hero 1(titulo) que este dentro 
+    del pie de pagina*/
 footer>h1{
     text-align: center;
 }
+/*quito subrayado del elemento (a), margen general, lera color
+    "blanca"*/
 footer>h1>a{
     text-decoration: none;
     margin-bottom: 10px;
     color: aliceblue;
 }
+/*cuando el cursor o el dedo toque o sobre pase el pie de pagina 
+se hace blanco y se activa una difuminacion en los bordes*/
 footer>h1:hover{
     background-color: aliceblue;
     color: rgb(5, 47, 82);
     cursor: pointer;
 }
-header>h1{
-    text-align: center;
+footer>h1>a:hover{
+    background-color: aliceblue;
+    color: rgb(5, 47, 82);
+    cursor: pointer;
 }
-h2{ text-align: center;}
 
-.box:hover{
-    box-shadow: 5px 5px 5px 5px #0d66db;
-}
-header:hover{
-     box-shadow: 2px -2px 5px 5px #0d66db;
-}
 footer:hover{
     box-shadow: 2px -2px 5px 5px #0d66db;
 }
-.plegable{
-    width: 200px;
-    background-color: #020c11;
-     border-radius: 12px;
-     margin: 10px;
-}
-#n1:target{
-    display: contents;
-}
-#n2:target{
-    display: contents;
-}
-#n3:target{
-    display: contents;
-}
-.plegable>h2>a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.plegable:hover{
-    box-shadow: 2px -2px 5px 5px #0d66db;
-}
 
-
+/*adaptacion a pantallas medianas y grandes, cambios den
+las medianas del contenedor y cajas*/
+@media(max-width: 1100px){
+    main{
+        max-width: 1090px;
+        margin:  auto;
+        display: inline-block;
+        
+    }
+     .box{
+    width: 550px;
+    
+    }
+    img{
+        width: 500px;
+    }
+     header{
+        max-width: 1090px;
+        margin: 10px auto;
+        
+    }
+     h1{
+        text-align: center;
+    }
+      footer{
+        
+        width:1090px;
+    }
+    
+}
+/*adaptacion a pantalla mobiles, cambios den
+las medianas del contenedor y cajas*/
 @media(max-width: 768px){
     main{
-        max-width: 768px;
-        margin: auto
+        margin: auto;
+        display: inline-block;
     }
      .box{
     width: 370px;
@@ -117,7 +186,6 @@ footer:hover{
      header{
         max-width: 370px;
         margin: 10px auto;
-       
         
     }
      h1{
@@ -126,31 +194,6 @@ footer:hover{
       footer{
         
         width:370px;
-    }
-    
-}
-
-@media(max-width: 480px){
-      header{
-        max-width: 300px;
-        margin: 10px auto;
-    }
-    main{
-        max-width: 480px;
-        margin: auto
-    }
-    .box{
-    width: 300px;
-    }
-    img{
-        width: 260px;
-    }
-    body{
-        width: 480px;
-    }
-    footer{
-        
-        width: 300px;
     }
     
 }
